@@ -5,6 +5,6 @@ provider "github" {
 
 resource "github_issue" "issue" {
   repository       = var.github_repo
-  title            = "My issue title"
-  body             = "The body of my issue"
+  title            = var.issue_title
+  body             = var.issue_body
 }
